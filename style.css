@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+html{
+    font-size: 18px;
+}
+
+body{
+    padding: 50px;
+    background-color: #1C1C1C;
+}
+
+p,h1,h2,h3,h4,h5,h6{
+    font-size: inherit;
+}
+
+h1{
+    font-size: 28px;
+    color: #fff;
+}
+
+h2{
+    margin-bottom: 9px;
+}
+
+p{
+    font-size: 14px;
+}
+
+.container{
+    width: 550px;
+    margin: auto;
+    text-align: center;
+}
+
+.header{
+    padding: 33px;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    background-color: #6943FF;
+    border-radius: 10px 10px 0 0;
+    justify-content: center;
+    text-align: center;
+    align-items: center;;
+}
+
+.conversions{
+    padding: 36px;
+    background-color: #F4F4F4;
+    border-radius: 0 0 10px 10px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    text-align: center;;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    position: relative;
+    width: 500px;
+    height: 108.57px;
+    background-color: #fff;
+    transition: 0.2s ease;
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: #5A537B;
+}
+
+
+#convertInput-element {
+    width: 300px;
+    border-style: none;
+    border: 2px solid #B295FF;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 58px;
+    color: #fff;
+    text-align: center;
+}
+
+.card:hover{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#convertBtn-element{
+    width: 117px;
+    height: 42px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#convertBtn-element:hover{
+    background: #e6e6e6;
+}
+
+
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {
+        display: none;
+      }
