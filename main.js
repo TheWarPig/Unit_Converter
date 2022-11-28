@@ -30,14 +30,14 @@ convertBtnElement.addEventListener('click', function() {
 function trigger(){
     let unites = convertInputElement.value
         
-    metersToFeet = Math.round((unites * 3.281) * 1000) / 1000
-    feetToMeters = Math.round((unites / 3.281) * 1000) / 1000
+    const metersToFeet = Math.round((unites * 3.281) * 1000) / 1000
+    const feetToMeters = Math.round((unites / 3.281) * 1000) / 1000
 
-    litersToGallons = Math.round((unites * 0.264) * 1000) / 1000
-    gallonsToLiters = Math.round((unites / 0.264) * 1000)/ 1000
+    const litersToGallons = Math.round((unites * 0.264) * 1000) / 1000
+    const gallonsToLiters = Math.round((unites / 0.264) * 1000)/ 1000
 
-    kilogramToPounds = Math.round((unites * 2.204) * 1000) / 1000
-    poundsToKilograms = Math.round((unites / 2.204) * 1000) / 1000
+    const kilogramToPounds = Math.round((unites * 2.204) * 1000) / 1000
+    const poundsToKilograms = Math.round((unites / 2.204) * 1000) / 1000
     
     if (count < 5){
         
