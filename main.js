@@ -13,8 +13,21 @@ const volumeDiv = document.getElementById("volumeC")
 const massDiv = document.getElementById("massC")
 let count = 0
 
+
+document.addEventListener('keydown', (event) =>{
+    let name = event.key;
+    if (name === "Enter") {
+        trigger()
+}
+}, false)
+
 convertBtnElement.addEventListener('click', function() {
+    trigger()
     
+});
+
+
+function trigger(){
     let unites = convertInputElement.value
         
     metersToFeet = Math.round((unites * 3.281) * 1000) / 1000
@@ -45,7 +58,8 @@ convertBtnElement.addEventListener('click', function() {
             kilogramToPounds, poundsToKilograms)
         count = 1
     }
-});
+    convertInputElement.value = ""
+}
 
 
 function render(unites, metersToFeet, feetToMeters, litersToGallons, gallonsToLiters, 
